@@ -1,0 +1,12 @@
+{
+  "showLineNumber": true,
+  "vimMode": true,
+  "attachmentFolderPath": "06-Assets",
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "07-Warehouse",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
+}

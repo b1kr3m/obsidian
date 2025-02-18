@@ -1,0 +1,18 @@
+{
+  "accentColor": "#503483",
+  "cssTheme": "AnuPpuccin",
+  "interfaceFontFamily": "Maple Mono,JetBrainsMono Nerd Font",
+  "textFontFamily": "JetBrainsMono Nerd Font Mono",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "baseFontSize": 20,
+  "enabledCssSnippets": [
+    "colored-sidebar-items",
+    "cyanvoxels-general-tweaks",
+    "daily-note-themes",
+    "notebook-backgrounds",
+    "cosmos-general-tweaks",
+    "note-headers-sniffet"
+  ],
+  "theme": "obsidian",
+  "showRibbon": true
+}

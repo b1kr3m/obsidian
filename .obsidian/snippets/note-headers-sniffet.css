@@ -1,0 +1,23 @@
+.cm-header-1, .markdown-preview-view h1 {
+color: var(--color-blue);
+}
+
+.cm-header-2, .markdown-preview-view h2 {
+color: var(--color-green);
+}
+
+.cm-header-3, .markdown-preview-view h3 {
+color: var(--color-orange);
+}
+
+.cm-header-4, .markdown-preview-view h4 {
+color: var(--color-red);
+}
+
+.cm-header-5, .markdown-preview-view h5 {
+color: var(--color-pink);
+}
+
+.cm-header-6, .markdown-preview-view h6 {
+color: var(--color-purple);
+}
