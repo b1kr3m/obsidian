@@ -1,7 +1,6 @@
 # MY OBSIDIAN VAULT 
 --- 
 ![](06-Assets/obsidian.png)
-#README
 Hey Guy's this is my second brain obsidian.
 This vault is basically used for the note taking methodology.
 ## Let's Understand my vault:

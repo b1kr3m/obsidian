@@ -14,5 +14,5 @@
     "note-headers-sniffet"
   ],
   "theme": "obsidian",
-  "showRibbon": true
+  "showRibbon": false
 }
