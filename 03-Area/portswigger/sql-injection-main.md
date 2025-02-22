@@ -1,7 +1,7 @@
 📅 **Date**: 18 February 25  
 📂 **Category**: Web Security
 🔒 **Topic**: SQL Injection
-🏷️ Tags: #websecurity  
+🏷️ Tags: #websecurity/sql-injection #websecurity 
 
 ---
 # SQL Injection:
@@ -40,6 +40,7 @@ The restriction `released = 1` is being used to hide products that are not relea
 The application doesn't implement any defenses against SQL injection attacks. This means an attacker can construct the following attack, for example:
 `https://insecure-website.com/products?category=Gifts'--`
 This results in the SQL query:
+
 ```sql
 SELECT * FROM products WHERE category = 'Gifts'--' AND released = 1
 ```
@@ -50,6 +51,7 @@ You can use a similar attack to cause the application to display all the product
 `https://insecure-website.com/products?category=Gifts'+OR+1=1--`
 
 This results in the SQL query:
+
 ```sql
 SELECT * FROM products WHERE category = 'Gifts' OR 1=1--' AND released = 1
 ```
@@ -64,6 +66,7 @@ SELECT * FROM users WHERE username = 'testsql' AND password = 'bikram123'
 ```
 
 In this case, an attacker can log in as any user without the need for a password. They can do this using the SQL comment sequence `--` to remove the password check from the `WHERE` clause of the query. For example, submitting the username `administrator'--` and a blank password results in the following query:
+
 ```sql
 SELECT * FROM users WHERE username = 'administrator'--' AND password = ''
 ```
@@ -130,12 +133,14 @@ The application might actually return the database error in its HTTP response, b
 ## Determining the number of columns required - Continued:
 
 The second method involves submitting a series of `UNION SELECT` payloads specifying a different number of null values:
+
 ```sql
 ' UNION SELECT NULL-- 
 ' UNION SELECT NULL,NULL-- 
 ' UNION SELECT NULL,NULL,NULL-- 
 etc.
 ```
+
 If the number of nulls does not match the number of columns, the database returns an error, such as:
 `All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.`
 
@@ -157,6 +162,7 @@ On MySQL, the double-dash sequence must be followed by a space. Alternatively, t
 A SQL injection UNION attack enables you to retrieve the results from an injected query. The interesting data that you want to retrieve is normally in string form. This means you need to find one or more columns in the original query results whose data type is, or is compatible with, string data.
 
 After you determine the number of required columns, you can probe each column to test whether it can hold string data. You can submit a series of `UNION SELECT` payloads that place a string value into each column in turn. For example, if the query returns four columns, you would submit:
+
 ```c
 ' UNION SELECT 'a',NULL,NULL,NULL-- 
 ' UNION SELECT NULL,'a',NULL,NULL-- 
@@ -164,6 +170,7 @@ After you determine the number of required columns, you can probe each column to
 ' UNION SELECT NULL,NULL,NULL,'a'--
 ```
 If the column data type is not compatible with string data, the injected query will cause a database error, such as:
+
 `Conversion failed when converting the varchar value 'a' to data type int.`
 If an error does not occur, and the application's response contains some additional content including the injected string value, then the relevant column is suitable for retrieving string data.
 
@@ -176,9 +183,9 @@ Suppose that:
 - The database contains a table called `users` with the columns `username` and `password`.
 
 In this example, you can retrieve the contents of the `users` table by submitting the input:
+
 ```sql
 ' UNION SELECT username, password FROM users--
 ```
 
 In order to perform this attack, you need to know that there is a table called `users` with two columns called `username` and `password`. Without this information, you would have to guess the names of the tables and columns. All modern databases provide ways to examine the database structure, and determine what tables and columns they contain.
-

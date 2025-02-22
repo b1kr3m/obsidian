@@ -1,7 +1,7 @@
 📅 **Date**: 18 February 25  
 📂 **Category**: Web Security
 🔒 **Topic**: SQL Injection
-🏷️ Tags: #websecurity/sql-injection
+🏷️ Tags: #websecurity #websecurity/sql-injection 
 
 ---
 ```python

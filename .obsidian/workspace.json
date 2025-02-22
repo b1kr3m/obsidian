@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a34c5e30524f487e",
+        "id": "426d62779bef43c0",
         "type": "tabs",
         "children": [
           {
-            "id": "991d5e28d32c694a",
+            "id": "ae2ce198c88e95f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "02-Projects/thm-authentication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "thm-authentication"
             }
           }
         ]
@@ -33,7 +33,54 @@
       {
         "id": "b393ca5dac459299",
         "type": "tabs",
-        "dimension": 49.72752043596731,
+        "dimension": 55.79710144927537,
+        "children": [
+          {
+            "id": "e481a75036b22eeb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8d62627011e8f0c9",
+        "type": "tabs",
+        "dimension": 44.20289855072464,
+        "children": [
+          {
+            "id": "9d44c88b02cc8995",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "tagfolder-view",
+              "state": {},
+              "pinned": true,
+              "icon": "stacked-levels",
+              "title": "Tag Folder"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 239.5
+  },
+  "right": {
+    "id": "9c5a80faaa6d3c1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ed96df6e73ffe90",
+        "type": "tabs",
+        "dimension": 68.63905325443787,
         "children": [
           {
             "id": "2671abdaab860c88",
@@ -53,62 +100,11 @@
             }
           },
           {
-            "id": "e481a75036b22eeb",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "8d62627011e8f0c9",
-        "type": "tabs",
-        "dimension": 50.2724795640327,
-        "children": [
-          {
-            "id": "9d44c88b02cc8995",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "tagfolder-view",
-              "state": {},
-              "pinned": true,
-              "icon": "stacked-levels",
-              "title": "Tag Folder"
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 278.5086555480957,
-    "collapsed": true
-  },
-  "right": {
-    "id": "9c5a80faaa6d3c1b",
-    "type": "split",
-    "children": [
-      {
-        "id": "0ed96df6e73ffe90",
-        "type": "tabs",
-        "dimension": 62.17142857142857,
-        "children": [
-          {
             "id": "4a32a42e7f89f4da",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "calendar",
               "state": {},
-              "pinned": true,
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
@@ -156,7 +152,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.010635237303143285,
+                  "scale": 0.45050811767578125,
                   "close": true
                 }
               },
@@ -170,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "02-Projects/thm-authentication.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of thm-authentication"
             }
           },
           {
@@ -213,12 +209,13 @@
               "title": "Tags"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "a7cb12ab2e0f1645",
         "type": "tabs",
-        "dimension": 37.828571428571436,
+        "dimension": 31.360946745562128,
         "children": [
           {
             "id": "aa7eb53546811be3",
@@ -236,15 +233,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5,
-    "collapsed": true
+    "width": 302.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
@@ -252,16 +247,26 @@
       "iconic:Open rulebook": false
     }
   },
-  "active": "991d5e28d32c694a",
+  "active": "ae2ce198c88e95f7",
   "lastOpenFiles": [
-    "03-Area/portswigger/sql-injection-main.md",
-    "01-Templates/Template, portswigger.md",
-    "03-Area/portswigger/sql-injection-lab3.md",
-    "03-Area/portswigger/Untitled.md",
-    "01-Templates/Template, tryhackme.md",
-    "07-Warehouse/Piracy.md",
-    "07-Warehouse/P.A.R.A.md",
+    "04-Resources/thm-linux-file-system-analysis.md",
     "README.md",
+    "02-Projects/thm-authentication.md",
+    "01-Templates/Template, portswigger.md",
+    "01-Templates/Template, tryhackme.md",
+    "01-Templates/templates, web-app-pentests.md",
+    "07-Warehouse/P.A.R.A.md",
+    "07-Warehouse/data.md",
+    "04-Resources/Untitled.md",
+    "06-Assets/authentication-thm.png",
+    "06-Assets/Pasted image 20250219003227.png",
+    "03-Area/portswigger/sql-injection-main.md",
+    "02-Projects/Untitled.md",
+    "07-Warehouse/Piracy.md",
+    "03-Area/portswigger/sql-injection-lab3.md",
+    "03-Area/portswigger/sql-injection-lab2.md",
+    "03-Area/portswigger/sql-injection-lab1.md",
+    "06-Assets/sql_lab1.png",
     "03-Area/portswigger",
     "pininfo.md",
     "bikram_fjsdf_fdsjf.md",

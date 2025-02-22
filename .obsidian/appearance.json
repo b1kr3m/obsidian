@@ -1,6 +1,6 @@
 {
   "accentColor": "#503483",
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "",
   "interfaceFontFamily": "Maple Mono,JetBrainsMono Nerd Font",
   "textFontFamily": "JetBrainsMono Nerd Font Mono",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
@@ -14,5 +14,6 @@
     "note-headers-sniffet"
   ],
   "theme": "obsidian",
-  "showRibbon": false
+  "showRibbon": false,
+  "baseFontSizeAction": false
 }

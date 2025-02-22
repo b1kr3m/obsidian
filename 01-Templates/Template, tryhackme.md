@@ -3,4 +3,6 @@
 📂 **Category**: TryHackMe 
 📝 **Status**: Completed  
 🔒 **Room**: SQL Injection: Basics
-🏷️ Tags: #tryhackme/walkthorough !#tryhackme/challanges
+🏷️ Tags: # tryhackme # tryhackme/learn # tryhackme/challenge
+
+---

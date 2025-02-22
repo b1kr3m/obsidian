@@ -7,7 +7,7 @@ The **PARA Method** (created by Tiago Forte) is a simple yet effective system fo
 - 📜 **Archives** – Completed or inactive items.
 
 This method ensures that cybersecurity professionals, bug hunters, and CTF players keep their notes structured and easily accessible.
-## 🚀 How to Implement PARA for Cybersecurity and Bug Hunting
+## 🚀 How to Implement PARA for CyberSecurity and Bug Hunting
 
 ### 🔥 1. **Projects** (Active Tasks & Goals)
 > These are tasks with a clear objective and deadline.

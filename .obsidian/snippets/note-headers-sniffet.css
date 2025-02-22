@@ -21,3 +21,7 @@ color: var(--color-pink);
 .cm-header-6, .markdown-preview-view h6 {
 color: var(--color-purple);
 }
+
+.cm-s-obsidian span.cm-inline-code {
+    color: rgb(202, 83, 83);
+}
