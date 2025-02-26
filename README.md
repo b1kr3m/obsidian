@@ -9,7 +9,7 @@ This vault is basically used for the note taking methodology.
 
 Run this command in your terminal with your Specific Dir.
 ```console
-git clone --depth https://github.com/Lalit-710Cx/obsidian.git
+git clone --depth https://github.com/b1kr3m/obsidian.git
 ```
 
 ### Folder Structure:
