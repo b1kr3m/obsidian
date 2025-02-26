@@ -11,7 +11,7 @@ color: var(--color-orange);
 }
 
 .cm-header-4, .markdown-preview-view h4 {
-color: var(--color-red);
+color: var(--color-purple);
 }
 
 .cm-header-5, .markdown-preview-view h5 {
@@ -19,9 +19,12 @@ color: var(--color-pink);
 }
 
 .cm-header-6, .markdown-preview-view h6 {
-color: var(--color-purple);
+color: var(--color-red);
 }
 
 .cm-s-obsidian span.cm-inline-code {
-    color: rgb(202, 83, 83);
+    color: rgb(93, 211, 83);
+}
+.cm-strong, .markdown-preview-view strong{
+    color: rgb(47, 152, 227);
 }
