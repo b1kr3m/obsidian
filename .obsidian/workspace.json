@@ -129,7 +129,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "02-Projects/thm-Injection Attacks.md",
+                "file": "02-Projects/thm-insecure-deserialisation.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -152,12 +152,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6757621765136719,
+                  "scale": 0.3003387451171875,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of thm-Injection Attacks"
+              "title": "Graph of thm-insecure-deserialisation"
             }
           },
           {
@@ -233,8 +233,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5,
-    "collapsed": true
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,45 +250,45 @@
   "active": "5689c35f98b37966",
   "lastOpenFiles": [
     "02-Projects/thm-advance-server-side-attacks.md",
-    "02-Projects/thm-insecure-deserialisation.md",
-    "05-Archives/htb-meaw.md",
-    "07-Warehouse/thm-orm-injection.md",
-    "07-Warehouse/thm-server-side-template-injection.md",
-    "02-Projects/thm-Injection-Attacks.md",
+    "test.md",
+    "README.md",
+    "07-Warehouse/P.A.R.A.md",
+    "07-Warehouse/Piracy.md",
+    "07-Warehouse/thm-hammer.md",
+    "06-Assets/sql_lab1.png",
+    "06-Assets/obsidian.png",
     "06-Assets/Pasted image 20250224160442.png",
-    "02-Projects/thm-authentication.md",
-    "07-Warehouse/thm-Multi-Factor-Authentication.md",
-    "02-Projects/thm-enum-bruteforce.md",
+    "06-Assets/authentication-thm.png",
+    "05-Archives/htb-meaw.md",
+    "02-Projects/thm-session-management.md",
     "02-Projects/thm-Oauth-vuln.md",
     "02-Projects/thm-multi-factor-authentication.md",
-    "02-Projects/thm-session-management.md",
     "02-Projects/thm-jwt-security.md",
+    "02-Projects/thm-insecure-deserialisation.md",
+    "02-Projects/thm-insecure-deserialisation.md~",
+    "02-Projects/thm-Injection-Attacks.md",
+    "02-Projects/thm-enum-bruteforce.md",
+    "02-Projects/thm-authentication.md",
+    "02-Projects/thm-ssrf.md",
+    "00-Courses/pinnacle-lab-projects.md",
+    "07-Warehouse/thm-orm-injection.md",
+    "07-Warehouse/thm-server-side-template-injection.md",
+    "07-Warehouse/thm-Multi-Factor-Authentication.md",
     "02-Projects/thm-multi-factor-auth.md~",
-    "07-Warehouse/thm-hammer.md",
     "02-Projects/delele.md",
     "04-Resources/thm-linux-file-system-analysis.md",
-    "test.md",
     "session_management.md",
     "03-Area/portswigger/sql-injection-main.md",
-    "README.md",
     "01-Templates/Template, portswigger.md",
     "01-Templates/Template, tryhackme.md",
-    "01-Templates/templates, web-app-pentests.md",
-    "07-Warehouse/P.A.R.A.md",
-    "07-Warehouse/data.md",
-    "04-Resources/Untitled.md",
-    "06-Assets/authentication-thm.png",
     "06-Assets/Pasted image 20250219003227.png",
-    "06-Assets/sql_lab1.png",
     "03-Area/portswigger",
-    "06-Assets/obsidian.png",
     "06-Assets",
     "00-Courses",
     "05-Archives",
     "04-Resources",
     "03-Area",
     "02-Projects",
-    "07-Warehouse",
-    "01-Templates"
+    "07-Warehouse"
   ]
 }
