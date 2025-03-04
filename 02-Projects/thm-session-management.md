@@ -6,9 +6,7 @@
 
 ---
 ## Session Management
-
 ### Overview
-
 - [ ] **Session Management**: Tracks user interactions in a stateless HTTP protocol.
 - [ ] **Purpose**: Ensures secure user sessions after authentication.
 - [ ] **Key Focus**: Securing session creation, tracking, expiry, and termination.
@@ -30,7 +28,6 @@
         - [ ] Example: Session data sent over HTTP instead of HTTPS, allowing interception.
 		
 ---
-
 #### 2. Session Tracking
 
 - [ ] **How**: Session value is submitted with each request to identify the user.
@@ -45,7 +42,6 @@
         - [ ] Example: An app logs only failed login attempts but not successful ones, making it hard to detect session hijacking.
 
 ---
-
 #### 3. Session Expiry
 - [ ] **Why**: HTTP is stateless; sessions must expire to prevent indefinite access.
 - [ ] **Best Practices**:
@@ -55,7 +51,6 @@
         - [ ] Example: A session created in the US is used from a different country, triggering termination.
 
 ---
-
 #### 4. Session Termination
 - [ ] **When**: User logs out or session expires.
 - [ ] **Best Practices**:
@@ -72,20 +67,17 @@
 #### 1. Identification
 - [ ] **What**: User claims an identity (e.g., username or email).
 - [ ] **Example**: A user enters `john.doe@example.com` as their username.
-
 #### 2. Authentication
 - [ ] **What**: Verify the user’s identity (e.g., password).
 - [ ] **Example**: The user provides the correct password for `john.doe@example.com`.
-    
 #### 3. Authorization
 - [ ] **What**: Ensure the user has permission to perform an action.
 - [ ] **Example**: A user with the role `student` cannot access the `/admin/dashboard` endpoint.
-
 #### 4. Accountability
 - [ ] **What**: Log user actions tied to their session.
 - [ ] **Example**: Logging every request with the session ID, user ID, and timestamp for audit purposes.
 
----
+
 ### Session Management Methods
 #### 1. Cookie-Based Sessions
 - [ ] **How**: Browser stores session cookies (`Set-Cookie` header).
@@ -161,7 +153,6 @@
     - [ ] Example: Log session ID, user ID, timestamp, and action performed.
 
 ---
-
 ### Exploitation Scenarios
 
 #### 1. Excessive Session Lifetimes
@@ -172,7 +163,7 @@
 ---
 ### Key Takeaways
 
-- [ ] Secure the entire session lifecycle (creation, tracking, expiry, termination).
+- [ ] Secure the entire session lifecycles (creation, tracking, expiry, termination).
 - [ ] Use strong session values and enforce proper authorization.
 - [ ] Implement logging for accountability.
 - [ ] Regularly review and test session management mechanisms.

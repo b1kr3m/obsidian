@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "cf6d0eb8fb7078a7",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "716ad7e1a5f01df1",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "5689c35f98b37966",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-Projects/thm-insecure-deserialisation.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "thm-insecure-deserialisation"
+              "title": "README"
             }
           }
         ]
@@ -33,7 +33,7 @@
       {
         "id": "b393ca5dac459299",
         "type": "tabs",
-        "dimension": 55.79710144927537,
+        "dimension": 58.15722738799663,
         "children": [
           {
             "id": "e481a75036b22eeb",
@@ -47,22 +47,30 @@
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
+          },
+          {
+            "id": "7236464b8364463f",
+            "type": "leaf",
+            "state": {
+              "type": "tagfolder-view",
+              "state": {},
+              "icon": "stacked-levels",
+              "title": "Tag Folder"
+            }
           }
         ]
       },
       {
         "id": "8d62627011e8f0c9",
         "type": "tabs",
-        "dimension": 44.20289855072464,
+        "dimension": 41.84277261200338,
         "children": [
           {
             "id": "9d44c88b02cc8995",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "tagfolder-view",
               "state": {},
-              "pinned": true,
               "icon": "stacked-levels",
               "title": "Tag Folder"
             }
@@ -80,7 +88,6 @@
       {
         "id": "0ed96df6e73ffe90",
         "type": "tabs",
-        "dimension": 68.63905325443787,
         "children": [
           {
             "id": "2671abdaab860c88",
@@ -88,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#tryhackme",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,16 +104,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "4a32a42e7f89f4da",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
             }
           },
           {
@@ -129,7 +126,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "02-Projects/thm-insecure-deserialisation.md",
+                "file": "HOME.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -152,12 +149,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.3003387451171875,
+                  "scale": 0.03955078125,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of thm-insecure-deserialisation"
+              "title": "Graph of HOME"
             }
           },
           {
@@ -166,13 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-Resources/thm-linux-file-system-analysis.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of thm-linux-file-system-analysis"
+              "title": "Outline of README"
             }
           },
           {
@@ -208,28 +205,19 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "a7cb12ab2e0f1645",
-        "type": "tabs",
-        "dimension": 31.360946745562128,
-        "children": [
+          },
           {
-            "id": "aa7eb53546811be3",
+            "id": "d66a1ac2c6b5cfa4",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "timer-view",
+              "type": "advanced-tables-toolbar",
               "state": {},
-              "pinned": true,
-              "icon": "timer",
-              "title": "Timer"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -243,48 +231,51 @@
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "pomodoro-timer:Toggle timer panel": false,
-      "iconic:Open rulebook": false
+      "iconic:Open rulebook": false,
+      "widgets:Add widget": false,
+      "daily-notes:Open today's daily note": false,
+      "card-board:CardBoard": false
     }
   },
-  "active": "5689c35f98b37966",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "02-Projects/thm-advance-server-side-attacks.md",
-    "test.md",
+    "00-Daily/04-03-2025.md",
     "README.md",
+    "03-Area/portswigger/sql-injection-main.md",
+    "03-Area/portswigger/sql-injection-lab3.md",
+    "03-Area/portswigger/sql-injection-lab2.md",
+    "02-Projects/thm-advance-server-side-attacks.md",
+    "01-Templates/Daily-note.md",
+    "01-Templates/templates, web-app-pentests.md",
+    "01-Templates/Template, tryhackme.md",
+    "01-Templates/Template, portswigger.md",
+    "HOMEPAGE.md",
+    "02-Projects/pinnacle-lab-projects.md",
+    "02-Projects/thm-session-management.md",
+    "02-Projects/thm-enum-bruteforce.md",
+    "02-Projects/thm-Injection-Attacks.md",
+    "02-Projects/thm-authentication.md",
+    "05-Archives/htb-meaw.md",
+    "Untitled.canvas",
+    "07-Warehouse/thm-hammer.md",
     "07-Warehouse/P.A.R.A.md",
     "07-Warehouse/Piracy.md",
-    "07-Warehouse/thm-hammer.md",
+    "test.md",
+    "02-Projects/thm-jwt-security.md",
+    "02-Projects/thm-insecure-deserialisation.md",
+    "02-Projects/thm-multi-factor-authentication.md",
+    "02-Projects/thm-Oauth-vuln.md",
+    "02-Projects/thm-ssrf.md",
     "06-Assets/sql_lab1.png",
     "06-Assets/obsidian.png",
     "06-Assets/Pasted image 20250224160442.png",
     "06-Assets/authentication-thm.png",
-    "05-Archives/htb-meaw.md",
-    "02-Projects/thm-session-management.md",
-    "02-Projects/thm-Oauth-vuln.md",
-    "02-Projects/thm-multi-factor-authentication.md",
-    "02-Projects/thm-jwt-security.md",
-    "02-Projects/thm-insecure-deserialisation.md",
     "02-Projects/thm-insecure-deserialisation.md~",
-    "02-Projects/thm-Injection-Attacks.md",
-    "02-Projects/thm-enum-bruteforce.md",
-    "02-Projects/thm-authentication.md",
-    "02-Projects/thm-ssrf.md",
-    "00-Courses/pinnacle-lab-projects.md",
-    "07-Warehouse/thm-orm-injection.md",
-    "07-Warehouse/thm-server-side-template-injection.md",
-    "07-Warehouse/thm-Multi-Factor-Authentication.md",
     "02-Projects/thm-multi-factor-auth.md~",
-    "02-Projects/delele.md",
-    "04-Resources/thm-linux-file-system-analysis.md",
-    "session_management.md",
-    "03-Area/portswigger/sql-injection-main.md",
-    "01-Templates/Template, portswigger.md",
-    "01-Templates/Template, tryhackme.md",
     "06-Assets/Pasted image 20250219003227.png",
     "03-Area/portswigger",
     "06-Assets",
-    "00-Courses",
+    "00-Daily",
     "05-Archives",
     "04-Resources",
     "03-Area",

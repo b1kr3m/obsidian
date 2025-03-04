@@ -1,4 +1,3 @@
-
 📅 **Date**: 23 February 25  
 📂 **Category**: TryHackMe 
 📝 **Status**: Completed  
@@ -11,7 +10,6 @@
 OAuth 2.0 is an authorization framework that allows third- [ ]party applications to access user data without exposing user credentials. Understanding its core concepts is crucial for identifying vulnerabilities during penetration testing and bug hunting.
 
 ---
-
 ## Key Components of OAuth 2.0
 
 ### 1. **Resource Owner**
@@ -55,7 +53,6 @@ OAuth 2.0 is an authorization framework that allows third- [ ]party applications
    - [ ] Example: A unique value sent during the login process to prevent session hijacking.
 
 ---
-
 ## OAuth 2.0 Grant Types
 
 ### 1. **Authorization Code Grant**
@@ -90,10 +87,8 @@ OAuth 2.0 is an authorization framework that allows third- [ ]party applications
    - [ ] Steps:
      1. Client authenticates with the authorization server using its credentials.
      2. Authorization server issues an access token.
-   - [ ] Use Case: Backend services and APIs.
-
+   - [ ] Use Case: BackEnd services and APIs.
 ---
-
 ## Common Vulnerabilities in OAuth 2.0
 
 ### 1. **Insecure Redirect URI**
@@ -122,7 +117,6 @@ OAuth 2.0 is an authorization framework that allows third- [ ]party applications
    - [ ] Mitigation: Use nonce values and timestamp checks.
 
 ---
-
 ## OAuth 2.1 Enhancements
 OAuth 2.1 addresses several vulnerabilities in OAuth 2.0:
 - [ ] **Deprecation of Implicit Grant**: Replaced with Authorization Code Flow with PKCE.
@@ -131,7 +125,6 @@ OAuth 2.1 addresses several vulnerabilities in OAuth 2.0:
 - [ ] **Stricter Redirect URI Validation**: Prevents open redirect vulnerabilities.
 
 ---
-
 ## Key Takeaways for Bug Hunting
 1. **Check Redirect URI Validation**: Ensure the `redirect_uri` is properly validated and matches registered URIs.
 2. **Verify State Parameter Usage**: Confirm the state parameter is present and validated.

@@ -62,6 +62,9 @@ this is extra snippets I added for better theme and UI.
  daily-note-themes.css
  note-headers-sniffet.css
  notebook-backgrounds.css
+ dashboard.css
+ hide-properties.css
+ MCL-Multi-Column.css
 ```
 ### Plugins:
 

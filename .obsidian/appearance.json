@@ -11,7 +11,9 @@
     "daily-note-themes",
     "notebook-backgrounds",
     "cosmos-general-tweaks",
-    "note-headers-sniffet"
+    "note-headers-sniffet",
+    "MCL-Multi-Column",
+    "hide-properties"
   ],
   "theme": "obsidian",
   "showRibbon": false,

@@ -21,7 +21,57 @@
   },
   "appIcons": {},
   "tabIcons": {},
-  "fileIcons": {},
+  "fileIcons": {
+    "00-Daily": {
+      "icon": "lucide-joystick",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ],
+      "color": "green"
+    },
+    "01-Templates": {
+      "icon": "lucide-snowflake",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ]
+    },
+    "02-Projects": {
+      "icon": "lucide-gift",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ]
+    },
+    "03-Area": {
+      "icon": "lucide-dices",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ]
+    },
+    "04-Resources": {
+      "icon": "tabs",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ]
+    },
+    "05-Archives": {
+      "icon": "lucide-origami",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ]
+    },
+    "06-Assets": {
+      "icon": "lucide-fish",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ]
+    },
+    "07-Warehouse": {
+      "icon": "lucide-drafting-compass",
+      "unsynced": [
+        "bbda67b1284b3b55"
+      ]
+    }
+  },
   "bookmarkIcons": {},
   "tagIcons": {},
   "propertyIcons": {},

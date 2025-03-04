@@ -1,4 +1,3 @@
-
 📅 **Date**: <% tp.file.creation_date("DD MMMM YY") %>  
 📂 **Category**: TryHackMe 
 📝 **Status**: Completed  

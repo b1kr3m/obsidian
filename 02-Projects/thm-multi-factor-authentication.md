@@ -35,7 +35,7 @@ MFA (Multi-Factor Authentication): A security mechanism that requires users to p
     - [ ] Implement proper access controls.
     - [ ] Validate user sessions and permissions at every step.
 
-### 2.3 Brute- [ ]Forcing OTPs
+### 2.3 Brute-Forcing OTPs
 - [ ] **Definition**: Repeatedly guessing OTPs to gain unauthorized access.
     
 - [ ] **Mitigation**:
@@ -61,10 +61,10 @@ MFA (Multi-Factor Authentication): A security mechanism that requires users to p
     3. Bypass OTP verification and access the dashboard.
 - [ ] **Mitigation**: Ensure proper session validation and access controls.
 
-### 3.3 Beating Auto- [ ]Logout (Session Hijacking)
+### 3.3 Beating Auto-Logout (Session Hijacking)
 
 - [ ] **Steps**:
-    1. Use a Python script to brute- [ ]force the OTP.
+    1. Use a Python script to brute-force the OTP.
     2. Extract the session cookie (`PHPSESSID`).
     3. Use the session cookie to log in without credentials or OTP.
 

@@ -1,4 +1,6 @@
 {
-  "template": "04 - templates/template-daily",
-  "folder": "03 - calendar/daily-tasks"
+  "template": "01-Templates/daily-note",
+  "folder": "00-Daily",
+  "autorun": true,
+  "format": "DD-MM-YYYY"
 }

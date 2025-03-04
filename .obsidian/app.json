@@ -9,5 +9,6 @@
   "newFileFolderPath": "07-Warehouse",
   "useMarkdownLinks": false,
   "newLinkFormat": "relative",
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "propertiesInDocument": "hidden"
 }

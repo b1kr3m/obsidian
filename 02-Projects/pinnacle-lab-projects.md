@@ -8,3 +8,5 @@ Create a tool to secure image files and encryption, protecting visual data from 
 
 # Password Analyzer
 Develop a utility for evaluating password strength, detecting weaknesses and recommending secure password practices
+
+
