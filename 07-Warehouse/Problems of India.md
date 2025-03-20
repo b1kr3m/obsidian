@@ -1,0 +1,8 @@
+- [ ] Curreption
+- [ ] relation between police and politicians
+- [ ] no civic manner
+- [ ] very Poor
+- [ ] low infrastructure
+- [ ] godi media
+- [ ] lots of people
+- [ ] data integrity

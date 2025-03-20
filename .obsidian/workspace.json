@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "442c2a730fb6cb1a",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "533c056913d2222a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "03-Area/python-v3.13.2/Python-Menu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Python-Menu"
+            }
+          },
+          {
+            "id": "371c204f133ac48d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-Area/python-v3.13.2/Python-Menu.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Python-Menu"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -33,7 +48,6 @@
       {
         "id": "b393ca5dac459299",
         "type": "tabs",
-        "dimension": 58.15722738799663,
         "children": [
           {
             "id": "e481a75036b22eeb",
@@ -47,30 +61,21 @@
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
-          },
-          {
-            "id": "7236464b8364463f",
-            "type": "leaf",
-            "state": {
-              "type": "tagfolder-view",
-              "state": {},
-              "icon": "stacked-levels",
-              "title": "Tag Folder"
-            }
           }
         ]
       },
       {
-        "id": "8d62627011e8f0c9",
+        "id": "d2bff2aa658c16ab",
         "type": "tabs",
-        "dimension": 41.84277261200338,
         "children": [
           {
-            "id": "9d44c88b02cc8995",
+            "id": "7236464b8364463f",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "tagfolder-view",
               "state": {},
+              "pinned": true,
               "icon": "stacked-levels",
               "title": "Tag Folder"
             }
@@ -104,20 +109,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "a927eed3ad945efc",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "README.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from README"
             }
           },
           {
@@ -163,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "02-Projects/Python-Solo-Leveling-Game.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Python-Solo-Leveling-Game"
             }
           },
           {
@@ -215,13 +206,27 @@
               "icon": "spreadsheet",
               "title": "Advanced Tables"
             }
+          },
+          {
+            "id": "d340c992a2977894",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03-Area/python-v3.13.2/Python-Menu.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Python-Menu"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 371.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,49 +242,51 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "371c204f133ac48d",
   "lastOpenFiles": [
-    "00-Daily/04-03-2025.md",
-    "README.md",
-    "03-Area/portswigger/sql-injection-main.md",
-    "03-Area/portswigger/sql-injection-lab3.md",
-    "03-Area/portswigger/sql-injection-lab2.md",
-    "02-Projects/thm-advance-server-side-attacks.md",
+    "00-Daily/06-03-2025.md",
     "01-Templates/Daily-note.md",
+    "01-Templates/Template, portswigger.md",
+    "02-Projects/pinnacle-lab-projects.md",
     "01-Templates/templates, web-app-pentests.md",
     "01-Templates/Template, tryhackme.md",
-    "01-Templates/Template, portswigger.md",
-    "HOMEPAGE.md",
-    "02-Projects/pinnacle-lab-projects.md",
-    "02-Projects/thm-session-management.md",
     "02-Projects/thm-enum-bruteforce.md",
+    "02-Projects/thm-advance-server-side-attacks.md",
+    "03-Area/python-v3.13.2/Python-Menu.md",
+    "07-Warehouse/Problems of India.md",
+    "portswigger/cross-side-scripting-main.md",
+    "03-Area/python-v3.13.2",
+    "portswigger/sql-injection-lab2.md",
+    "portswigger/sql-injection-lab3.md",
+    "portswigger/sql-injection-main.md",
+    "04-Resources/BB-Methodology/Untitled.md",
+    "04-Resources/thm-linux-file-system-analysis.md",
+    "04-Resources/BB-Methodology",
+    "README.md",
+    "02-Projects/thm-ssrf.md",
+    "00-Daily/04-03-2025.md",
+    "02-Projects/Python-Solo-Leveling-Game.md",
+    "06-Assets/monorches.png",
+    "06-Assets/shadows.png",
+    "06-Assets/Pasted image 20250224160442.png",
+    "HOMEPAGE.md",
+    "02-Projects/thm-session-management.md",
     "02-Projects/thm-Injection-Attacks.md",
     "02-Projects/thm-authentication.md",
     "05-Archives/htb-meaw.md",
     "Untitled.canvas",
     "07-Warehouse/thm-hammer.md",
-    "07-Warehouse/P.A.R.A.md",
-    "07-Warehouse/Piracy.md",
-    "test.md",
-    "02-Projects/thm-jwt-security.md",
-    "02-Projects/thm-insecure-deserialisation.md",
-    "02-Projects/thm-multi-factor-authentication.md",
-    "02-Projects/thm-Oauth-vuln.md",
-    "02-Projects/thm-ssrf.md",
     "06-Assets/sql_lab1.png",
     "06-Assets/obsidian.png",
-    "06-Assets/Pasted image 20250224160442.png",
     "06-Assets/authentication-thm.png",
     "02-Projects/thm-insecure-deserialisation.md~",
     "02-Projects/thm-multi-factor-auth.md~",
     "06-Assets/Pasted image 20250219003227.png",
-    "03-Area/portswigger",
+    "portswigger",
     "06-Assets",
     "00-Daily",
     "05-Archives",
     "04-Resources",
-    "03-Area",
-    "02-Projects",
-    "07-Warehouse"
+    "03-Area"
   ]
 }
