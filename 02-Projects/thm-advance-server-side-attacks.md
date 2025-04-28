@@ -8,5 +8,3 @@
 ---
 # Advanced Server-Side Attacks
 Master the skills of advanced server-side attacks, covering SSRF, File Inclusions, Deserialization, Race Conditions, and Prototype Pollution.
-
-

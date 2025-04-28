@@ -7,7 +7,6 @@
   "obsidian-hotkeys-for-templates",
   "obsidian-minimal-settings",
   "url-into-selection",
-  "obsidian-vimrc-support",
   "templater-obsidian",
   "obsidian-tagfolder",
   "quick-latex",
@@ -22,5 +21,6 @@
   "obsidian-auto-link-title",
   "obsidian-banners",
   "card-board",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "obsidian-vimrc-support"
 ]

@@ -27,16 +27,46 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-Projects/thm-advance-server-side-attacks.md",
+                "file": "02-Projects/thm-jwt-security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "thm-advance-server-side-attacks"
+              "title": "thm-jwt-security"
+            }
+          },
+          {
+            "id": "679dc565774eb0c1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "27cd8dec6e8e9c9a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4d608e1e89f77724",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -63,7 +93,27 @@
             }
           },
           {
-            "id": "5887744fa89fed6a",
+            "id": "cb30903facf60a9f",
+            "type": "leaf",
+            "state": {
+              "type": "tagfolder-view",
+              "state": {},
+              "icon": "stacked-levels",
+              "title": "Tag Folder"
+            }
+          },
+          {
+            "id": "6309e3e3e2cd074d",
+            "type": "leaf",
+            "state": {
+              "type": "tagfolder-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "ce511b963ba35ff2",
             "type": "leaf",
             "state": {
               "type": "tagfolder-view",
@@ -74,24 +124,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "d2bff2aa658c16ab",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7236464b8364463f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "tagfolder-view",
-              "state": {},
-              "pinned": true,
-              "icon": "stacked-levels",
-              "title": "Tag Folder"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -253,41 +285,40 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "371c204f133ac48d",
+  "active": "4d608e1e89f77724",
   "lastOpenFiles": [
-    "02-Projects/Python-Solo-Leveling-Game.md",
+    "02-Projects/thm-jwt-security.md",
+    "02-Projects/thm-Injection-Attacks.md",
     "02-Projects/thm-advance-server-side-attacks.md",
+    "02-Projects/Python-Solo-Leveling-Game.md",
+    "02-Projects/pinnacle-lab-projects.md",
+    "03-Area/Arch Installation For Lenovo LOQ.md",
+    "03-Area/python-v3.13.2/Python-Menu.md",
+    "06-Assets/authentication-thm.png",
+    "06-Assets/monorches.png",
+    "06-Assets/Pasted image 20250224160442.png",
+    "06-Assets/obsidian.png",
+    "07-Warehouse/Problems of India.md",
+    "07-Warehouse/Piracy.md",
+    "07-Warehouse/P.A.R.A.md",
+    "README.md",
     "02-Projects/thm-authentication.md",
     "02-Projects/thm-enum-bruteforce.md",
-    "02-Projects/thm-Injection-Attacks.md",
     "02-Projects/thm-insecure-deserialisation.md",
-    "02-Projects/thm-jwt-security.md",
     "02-Projects/thm-multi-factor-authentication.md",
     "02-Projects/thm-Oauth-vuln.md",
     "02-Projects/thm-session-management.md",
     "02-Projects/thm-ssrf.md",
-    "README.md",
-    "03-Area/python-v3.13.2/Python-Menu.md",
     "05-Archives/htb-meaw.md",
-    "03-Area/Arch Installation For Lenovo LOQ.md",
-    "06-Assets/obsidian.png",
-    "06-Assets/monorches.png",
-    "06-Assets/authentication-thm.png",
-    "06-Assets/Pasted image 20250224160442.png",
     "06-Assets/shadows.png",
     "06-Assets/sql_lab1.png",
     "00-Daily/06-03-2025.md",
     "01-Templates/Daily-note.md",
     "01-Templates/Template, portswigger.md",
-    "02-Projects/pinnacle-lab-projects.md",
     "01-Templates/templates, web-app-pentests.md",
     "01-Templates/Template, tryhackme.md",
-    "07-Warehouse/Problems of India.md",
     "portswigger/cross-side-scripting-main.md",
     "03-Area/python-v3.13.2",
-    "portswigger/sql-injection-lab2.md",
-    "portswigger/sql-injection-lab3.md",
-    "portswigger/sql-injection-main.md",
     "04-Resources/BB-Methodology",
     "Untitled.canvas",
     "02-Projects/thm-insecure-deserialisation.md~",

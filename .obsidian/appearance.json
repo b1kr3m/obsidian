@@ -13,7 +13,8 @@
     "cosmos-general-tweaks",
     "note-headers-sniffet",
     "MCL-Multi-Column",
-    "hide-properties"
+    "hide-properties",
+    "dashboard"
   ],
   "theme": "obsidian",
   "showRibbon": false,
