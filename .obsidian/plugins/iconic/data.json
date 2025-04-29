@@ -25,50 +25,58 @@
     "00-Daily": {
       "icon": "lucide-joystick",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ],
       "color": "green"
     },
     "01-Templates": {
       "icon": "lucide-snowflake",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ]
     },
     "02-Projects": {
       "icon": "lucide-gift",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ]
     },
     "03-Area": {
       "icon": "lucide-dices",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ]
     },
     "04-Resources": {
       "icon": "tabs",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ]
     },
     "05-Archives": {
       "icon": "lucide-origami",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ]
     },
     "06-Assets": {
       "icon": "lucide-fish",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ]
     },
     "07-Warehouse": {
       "icon": "lucide-drafting-compass",
       "unsynced": [
-        "bbda67b1284b3b55"
+        "bbda67b1284b3b55",
+        "01942318b93d1cc1"
       ]
     }
   },
