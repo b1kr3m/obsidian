@@ -78,6 +78,12 @@
         "bbda67b1284b3b55",
         "01942318b93d1cc1"
       ]
+    },
+    "portswigger": {
+      "icon": "lucide-cup-soda",
+      "unsynced": [
+        "01942318b93d1cc1"
+      ]
     }
   },
   "bookmarkIcons": {},
