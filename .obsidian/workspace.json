@@ -1,22 +1,24 @@
 {
   "main": {
-    "id": "5324373015726ba8",
+    "id": "d25a19b01a5ee60c",
     "type": "split",
     "children": [
       {
-        "id": "6e37de010a389abc",
+        "id": "201b96a7f759db9b",
         "type": "tabs",
         "children": [
           {
-            "id": "22be93b4b79f8d94",
+            "id": "3a64ff795ad6bdc9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "06-Assets/Pasted image 20250501002508.png"
+                "file": "portswigger/cross-side-scripting-main.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250501002508"
+              "icon": "lucide-file",
+              "title": "cross-side-scripting-main"
             }
           }
         ]
@@ -25,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "be48c6d2a878d1a3",
+    "id": "a5e0d134a8053753",
     "type": "split",
     "children": [
       {
-        "id": "b393ca5dac459299",
+        "id": "211dd465e43d9ae8",
         "type": "tabs",
         "children": [
           {
-            "id": "e481a75036b22eeb",
+            "id": "b747c66fd54b72d3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -46,27 +48,30 @@
             }
           },
           {
-            "id": "cb30903facf60a9f",
+            "id": "5e9de47caa7ecad0",
             "type": "leaf",
             "state": {
-              "type": "tagfolder-view",
-              "state": {},
-              "icon": "stacked-levels",
-              "title": "Tag Folder"
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "60c473179406a635",
+        "type": "tabs",
+        "children": [
           {
-            "id": "6309e3e3e2cd074d",
-            "type": "leaf",
-            "state": {
-              "type": "tagfolder-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "ce511b963ba35ff2",
+            "id": "994ab65d58b310ce",
             "type": "leaf",
             "state": {
               "type": "tagfolder-view",
@@ -79,92 +84,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 350.5
+    "width": 300
   },
   "right": {
-    "id": "9c5a80faaa6d3c1b",
+    "id": "5a5221e74d462149",
     "type": "split",
     "children": [
       {
-        "id": "0ed96df6e73ffe90",
+        "id": "f934fe0c493345d9",
         "type": "tabs",
         "children": [
           {
-            "id": "2671abdaab860c88",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "tag:#tryhackme",
-                "matchingCase": true,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "212e5c19da066ca0",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "HOME.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 2,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.03955078125,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph of HOME"
-            }
-          },
-          {
-            "id": "9b4436f89283e493",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "06-Assets/Pasted image 20250501002508.png",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Pasted image 20250501002508"
-            }
-          },
-          {
-            "id": "cd1f96ad40d65913",
+            "id": "f549c9e53384aa43",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "portswigger/cross-side-scripting-main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,16 +110,30 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for cross-side-scripting-main"
             }
           },
           {
-            "id": "8936d7004f324a9f",
+            "id": "a8cacedab1d6662d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "portswigger/cross-side-scripting-main.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from cross-side-scripting-main"
+            }
+          },
+          {
+            "id": "65facf78bbca7b52",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabeticalReverse",
+                "sortOrder": "frequency",
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -193,43 +143,34 @@
             }
           },
           {
-            "id": "d66a1ac2c6b5cfa4",
+            "id": "fcb5df5d3f13fe6f",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "d340c992a2977894",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
+              "type": "outline",
               "state": {
-                "file": "03-Area/python-v3.13.2/Python-Menu.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "portswigger/cross-side-scripting-main.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Python-Menu"
+              "icon": "lucide-list",
+              "title": "Outline of cross-side-scripting-main"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false,
       "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "iconic:Open rulebook": false,
@@ -237,54 +178,11 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "22be93b4b79f8d94",
+  "active": "3a64ff795ad6bdc9",
   "lastOpenFiles": [
-    "06-Assets/Pasted image 20250501002054.png",
-    "06-Assets/Pasted image 20250501001953.png",
-    "06-Assets/Pasted image 20250501001921.png",
-    "06-Assets/Pasted image 20250430001337.png",
-    "06-Assets/Pasted image 20250430000517.png",
-    "06-Assets/Pasted image 20250430000329.png",
-    "06-Assets/Pasted image 20250430000250.png",
-    "06-Assets/Pasted image 20250224160442.png",
     "portswigger/race-condition.md",
-    "06-Assets/Pasted image 20250501002508.png",
-    "02-Projects/thm-jwt-security.md",
-    "02-Projects/thm-Injection-Attacks.md",
-    "02-Projects/thm-advance-server-side-attacks.md",
-    "02-Projects/Python-Solo-Leveling-Game.md",
-    "02-Projects/pinnacle-lab-projects.md",
-    "03-Area/Arch Installation For Lenovo LOQ.md",
-    "03-Area/python-v3.13.2/Python-Menu.md",
-    "06-Assets/authentication-thm.png",
-    "06-Assets/monorches.png",
-    "07-Warehouse/Problems of India.md",
-    "07-Warehouse/Piracy.md",
-    "07-Warehouse/P.A.R.A.md",
     "README.md",
-    "02-Projects/thm-authentication.md",
-    "02-Projects/thm-enum-bruteforce.md",
-    "02-Projects/thm-insecure-deserialisation.md",
-    "02-Projects/thm-multi-factor-authentication.md",
-    "02-Projects/thm-Oauth-vuln.md",
-    "02-Projects/thm-session-management.md",
-    "02-Projects/thm-ssrf.md",
-    "05-Archives/htb-meaw.md",
-    "00-Daily/06-03-2025.md",
-    "01-Templates/Daily-note.md",
-    "01-Templates/Template, portswigger.md",
-    "01-Templates/templates, web-app-pentests.md",
-    "01-Templates/Template, tryhackme.md",
-    "03-Area/python-v3.13.2",
-    "04-Resources/BB-Methodology",
     "Untitled.canvas",
-    "02-Projects/thm-insecure-deserialisation.md~",
-    "02-Projects/thm-multi-factor-auth.md~",
-    "portswigger",
-    "06-Assets",
-    "00-Daily",
-    "05-Archives",
-    "04-Resources",
-    "03-Area"
+    "Untitled 1.canvas"
   ]
 }
