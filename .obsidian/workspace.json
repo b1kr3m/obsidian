@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "portswigger/cross-side-scripting-main.md",
+                "file": "08-Portswigger/cross-side-scripting-main.md",
                 "mode": "source",
                 "source": false
               },
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "portswigger/cross-side-scripting-main.md",
+                "file": "08-Portswigger/cross-side-scripting-main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "portswigger/cross-side-scripting-main.md",
+                "file": "08-Portswigger/cross-side-scripting-main.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "portswigger/cross-side-scripting-main.md",
+                "file": "08-Portswigger/cross-side-scripting-main.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -180,7 +180,7 @@
   },
   "active": "3a64ff795ad6bdc9",
   "lastOpenFiles": [
-    "portswigger/race-condition.md",
+    "08-Portswigger/race-condition.md",
     "README.md",
     "Untitled.canvas",
     "Untitled 1.canvas"
