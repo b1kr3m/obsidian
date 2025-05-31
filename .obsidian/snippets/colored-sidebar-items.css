@@ -33,6 +33,7 @@ customization. Just swap out the color variable names in the prefix groups.
   --hot-red: #e3365e;            /* Default Prefix: 07 */
   --cool-gray: #515768;          /* Default Prefix: 99 */
   --default-text-color: #d0d0d0; /* Your Default Sidebar Text Color */
+  --green: #4CAF50;              /* New color for 08 prefix */
 
   --nav-item-weight-hover: bold;
 }
@@ -443,6 +444,50 @@ these to suit your own folder structure and vault theme!
   --nav-item-background-active: color-mix(
     in srgb,
     var(--hot-red) 10%,
+    transparent
+  );
+}
+
+/* ------------------------------- 08 Prefix -------------------------------- */
+.nav-folder-title[data-path^="08"] {
+  color: var(--red);
+  --nav-item-color-hover: color-mix(in srgb, var(--red) 40%, white);
+  --nav-item-background-hover: color-mix(in srgb, var(--red) 15%, transparent);
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--red) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, transparent);
+  border-radius: 5px;
+}
+.nav-folder-title[data-path^="08"]:hover {
+  --nav-collapse-icon-color: color-mix(in srgb, var(--red) 60%, white);
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="08"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--red) 20%,
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="08"])
+  .nav-file-title {
+  color: color-mix(in srgb, var(--red) 20%, var(--default-text-color));
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--red) 50%, var(--default-text-color)) 15%,
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--red) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--red) 10%,
     transparent
   );
 }
