@@ -116,3 +116,4 @@ echo "Content: " . $noteArray['content'];
 - [ ] Insecure deserialisation can lead to remote code execution, data leakage, and unauthorised access.
 - [ ] Tools like PHPGGC and Ysoserial automate exploitation but also help in identifying vulnerabilities.
 - [ ] Mitigation involves secure coding practices, input validation, and avoiding insecure formats.
+
