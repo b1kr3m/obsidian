@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08-Portswigger/cross-side-scripting-main.md",
+                "file": "08-Portswigger/race-condition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for cross-side-scripting-main"
+              "title": "Backlinks for race-condition"
             }
           },
           {
@@ -161,8 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,11 +179,16 @@
   },
   "active": "3a64ff795ad6bdc9",
   "lastOpenFiles": [
-    "08-Portswigger/cross-side-scripting-main.md",
-    "08-Portswigger/race-condition.md",
-    "08-Portswigger/sql-injection-main.md",
-    "08-Portswigger/sql-injection-lab3.md",
+    "06-Assets/Pasted image 20250709224010.png",
+    "06-Assets/Pasted image 20250709223924.png",
+    "06-Assets/Pasted image 20250709223910.png",
+    "06-Assets/Pasted image 20250709223843.png",
     "08-Portswigger/sql-injection-lab2.md",
+    "08-Portswigger/sql-injection-lab3.md",
+    "08-Portswigger/race-condition.md",
+    "07-Warehouse/P.A.R.A.md",
+    "08-Portswigger/cross-side-scripting-main.md",
+    "08-Portswigger/sql-injection-main.md",
     "00-Daily/Obvious-Focus-3181.md",
     "02-Projects/thm-DFIR.md",
     "README.md",

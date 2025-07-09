@@ -87,29 +87,40 @@ def queueRequests(target, wordlists):
 For more details, see the `race-single-packet-attack.py` template provided in Turbo Intruder's default examples directory.
 
 ## Hidden multi-step sequences
+### 📌 Concept
 
-In practice, a single request may initiate an entire multi-step sequence behind the scenes, transitioning the application through multiple hidden states that it enters and then exits again before request processing is complete. We'll refer to these as "sub-states".
+- A single request may trigger multiple internal steps (sub-states).
+- These sub-states are temporary and may be exploitable.
+- Goal: exploit the gap **before full processing completes**.
 
-If you can identify one or more HTTP requests that cause an interaction with the same data, you can potentially abuse these sub-states to expose time-sensitive variations of the kinds of logic flaws that are common in multi-step workflows. This enables race condition exploits that go far beyond limit overruns.
-
-For example, you may be familiar with flawed multi-factor authentication (MFA) workflows that let you perform the first part of the login using known credentials, then navigate straight to the application via forced browsing, effectively bypassing MFA entirely.
-
->If you're not familiar with this exploit, check out the 2FA simple bypass lab in our Authentication vulnerabilities topic.
-
-## Hidden multi-step sequences - Continued
-
-The following pseudo-code demonstrates how a website could be vulnerable to a race variation of this attack:
+---
+### ⚠️ Risk
+- Allows actions **before checks like MFA are enforced**.
+- Can lead to bypasses or unauthorized access.
+---
+### 🔓 Example: MFA Bypass:
 
 ```python
 session['userid'] = user.userid
 if user.mfa_enabled:
-	session['enforce_mfa'] = True 
-	# generate and send MFA code to user # redirect browser to MFA code entry form
+    session['enforce_mfa'] = True
+    # send MFA code
+    # redirect to MFA page
 ```
+- `userid` is set → session appears valid.
+- `enforce_mfa` not yet set → no MFA check.
+- Attacker sends login + sensitive request in parallel to exploit this window.
+### 🧪 Exploitation Strategy
 
-As you can see, this is in fact a multi-step sequence within the span of a single request. Most importantly, it transitions through a sub-state in which the user temporarily has a valid logged-in session, but MFA isn't yet being enforced. An attacker could potentially exploit this by sending a login request along with a request to a sensitive, authenticated endpoint.
-
-We'll look at some more examples of hidden multi-step sequences later, and you'll be able to practice exploiting them in our interactive labs. However, as these vulnerabilities are quite application-specific, it's important to first understand the broader methodology you'll need to apply in order to identify them efficiently, both in the labs and in the wild.
+1. Identify multi-step flows in a single request.
+    
+2. Check for temporary access before all checks apply.
+    
+3. Send race requests:
+    
+    - One for triggering state
+        
+    - One for exploiting it
 ## Methodology
 
 To detect and exploit hidden multi-step sequences, we recommend the following methodology, which is summarized from the whitepaper Smashing the state machine: The true potential of web race conditions by PortSwigger Research.
@@ -118,36 +129,53 @@ To detect and exploit hidden multi-step sequences, we recommend the following me
 
 ## 1 - Predict potential collisions
 
-Testing every endpoint is impractical. After mapping out the target site as normal, you can reduce the number of endpoints that you need to test by asking yourself the following questions:
+Cut down unnecessary testing by asking:
 
-- **Is this endpoint security critical?** Many endpoints don't touch critical functionality, so they're not worth testing.
-- **Is there any collision potential?** For a successful collision, you typically need two or more requests that trigger operations on the same record. For example, consider the following variations of a password reset implementation:
+- **Is this endpoint security-critical?**
+    - Skip endpoints that don’t touch sensitive logic (e.g., authentication, payments).
+        
+- **Could two requests operate on the _same_ resource?**
+    - Example:
+        
+        - ❌ Two password reset requests for **different** users → no collision.
+            
+        - ✅ Two requests that edit the **same** record → high collision potential.
 
 ![[../06-Assets/Pasted image 20250501001953.png]]
-
-With the first example, requesting parallel password resets for two different users is unlikely to cause a collision as it results in changes to two different records. However, the second implementation enables you to edit the same record with requests for two different users.
 ## 2 - Probe for clues
+Start by establishing a **baseline behavior**:
 
-To recognize clues, you first need to benchmark how the endpoint behaves under normal conditions. You can do this in Burp Repeater by grouping all of your requests and using the **Send group in sequence (separate connections)** option. For more information, see Sending requests in sequence.
-
-Next, send the same group of requests at once using the single-packet attack (or last-byte sync if HTTP/2 isn't supported) to minimize network jitter. You can do this in Burp Repeater by selecting the **Send group in parallel** option. For more information, see Sending requests in parallel. Alternatively, you can use the Turbo Intruder extension, which is available from the BApp Store.
-
-Anything at all can be a clue. Just look for some form of deviation from what you observed during benchmarking. This includes a change in one or more responses, but don't forget second-order effects like different email contents or a visible change in the application's behavior afterward.
-
+- In **Burp Repeater**, use:
+    - `Send group in sequence (separate connections)` → benchmark normal behavior.
+        
+    - `Send group in parallel` → simulate race condition using simultaneous requests.
+	
+- Or use **Turbo Intruder** for greater precision.
+    
+👀 Look for:
+- Differences in response codes or content.
+- **Second-order effects** (e.g., unexpected emails, UI changes, altered server state).
 ## 3 - Prove the concept
+Now that you’ve seen strange behavior:
 
-Try to understand what's happening, remove superfluous requests, and make sure you can still replicate the effects.
-
-Advanced race conditions can cause unusual and unique primitives, so the path to maximum impact isn't always immediately obvious. It may help to think of each race condition as a structural weakness rather than an isolated vulnerability.
+- **Minimize noise**: Remove unnecessary requests and isolate the cause.
+    
+- Understand the **underlying logic flaw**, not just surface symptoms.
+    
+- Treat it as a **structural flaw** (a state machine problem), not a one-off bug.
 #### PortSwigger Research
 For a more detailed methodology, check out the full whitepaper: Smashing the state machine: The true potential of web race conditions
 
 ## Multi-endpoint race conditions
+These involve **coordinated requests to multiple endpoints**:
 
-Perhaps the most intuitive form of these race conditions are those that involve sending requests to multiple endpoints at the same time.
-
-Think about the classic logic flaw in online stores where you add an item to your basket or cart, pay for it, then add more items to the cart before force-browsing to the order confirmation page.
-
+- 💡 **Classic example**:
+    
+    - Add item to cart → pay → add more items → go directly to confirmation.
+        
+    - If validation and confirmation happen in a _single request_, it's exploitable.
+        
+- 🧠 These flaws often stem from **missing or weak state machine validation**.
 #### Note
 If you're not familiar with this exploit, check out the Insufficient workflow validation lab from our Business logic vulnerabilities topic.
 
@@ -158,19 +186,105 @@ In this case, you can potentially add more items to your basket during the race 
 
 When testing for multi-endpoint race conditions, you may encounter issues trying to line up the race windows for each request, even if you send them all at exactly the same time using the single-packet technique.
 ![[../06-Assets/Pasted image 20250501002508.png]]
-This common problem is primarily caused by the following two factors:
+Why timing often fails:
 
-- **Delays introduced by network architecture -** For example, there may be a delay whenever the front-end server establishes a new connection to the back-end. The protocol used can also have a major impact.
-- **Delays introduced by endpoint-specific processing -** Different endpoints inherently vary in their processing times, sometimes significantly so, depending on what operations they trigger.
+- **1. Network-level delays**:
+    
+    - Frontend-to-backend connection lag.
+        
+    - Protocol overhead (e.g., HTTP/1.1 vs HTTP/2).
+        
+- **2. Endpoint-specific delays**:
+    
+    - Some endpoints are inherently slower due to internal logic.
 
-Fortunately, there are potential workarounds to both of these issues.
+✅ **Mitigation Techniques**:
+- **Warm connections** beforehand.
+- Time your requests based on **measured delays** from benchmarking.
+## Connection Warming:
 
-## Connection warming
+- Backend delays usually **affect all parallel requests equally**, so race conditions still work.
+    
+- Use **connection warming** (e.g., sending a harmless `GET /` request before your main request) to smooth out inconsistent response times.
+    
+- In **Burp Repeater**, use:
+    - `Send group in sequence (single connection)`
+        
+- Still seeing delays? Use **Turbo Intruder** to send warm-up requests first.
+## Abusing rate or resource limits:
+### Abusing Rate/Resource Limits
+- If warming doesn't help, servers may throttle requests sent too fast.
+- Trick the server by:
+    - Sending many **dummy requests** to trigger delays intentionally.
+    - This can make **single-packet attacks viable**.
+- ⚠️ Turbo Intruder can add delays but may not work reliably on **high-jitter targets**.
 
-Back-end connection delays don't usually interfere with race condition attacks because they typically delay parallel requests equally, so the requests stay in sync.
+![[../06-Assets/Pasted image 20250709223910.png]]
 
-It's essential to be able to distinguish these delays from those caused by endpoint-specific factors. One way to do this is by "warming" the connection with one or more inconsequential requests to see if this smoothes out the remaining processing times. In Burp Repeater, you can try adding a `GET` request for the homepage to the start of your tab group, then using the **Send group in sequence (single connection)** option.
+Web servers often delay the processing of requests if too many are sent too quickly. By sending a large number of dummy requests to intentionally trigger the rate or resource limit, you may be able to cause a suitable server-side delay. This makes the single-packet attack viable even when delayed execution is required.
+![[../06-Assets/Pasted image 20250709223843.png]]
+## Single-endpoint race condition:
+- Send parallel requests to the **same endpoint** with different values.
+- Example:
+    - Two parallel password resets from the same session (user A and user B).
+    - End result: `session['reset-user'] = victim`, but reset token goes to the attacker.
+- ⚠️ Needs **precise timing or luck**.
+- 💡 **Good targets**: Email confirmation, reset flows — often handled after response is sent.
 
-If the first request still has a longer processing time, but the rest of the requests are now processed within a short window, you can ignore the apparent delay and continue testing as normal.
+![[../06-Assets/Pasted image 20250709224010.png]]
+#### Note
 
-If you still see inconsistent response times on a single endpoint, even when using the single-packet technique, this is an indication that the back-end delay is interfering with your attack. You may be able to work around this by using Turbo Intruder to send some connection warming requests before following up with your main attack requests.
+For this attack to work, the different operations performed by each process must occur in just the right order. It would likely require multiple attempts, or a bit of luck, to achieve the desired outcome.
+
+Email address confirmations, or any email-based operations, are generally a good target for single-endpoint race conditions. Emails are often sent in a background thread after the server issues the HTTP response to the client, making race conditions more likely
+## Sessions based lock mechanisms:
+
+- Some frameworks (e.g., PHP) use **request locking per session**.
+    
+- This makes requests run **sequentially**, masking vulnerabilities.
+    
+- Bypass by using **different session tokens** for each request.
+## Partial construction race conditions:
+- pps may create resources in **multiple steps**, leaving them temporarily incomplete.
+    
+- Exploit this by sending requests during the window where:
+    
+    - The object exists but key properties (like API keys) are missing.
+        
+- Use **non-standard parameter formats** to match uninitialized values:
+    
+    - PHP: `param[]=`, `param[]=foo&param[]=bar`
+        
+    - Rails: `param[key]` → `{"param": {"key": nil}}`
+		```sql
+		GET /api/user/info?user=victim&api-key[]= 
+		```
+⚠️ Similar tricks might work with **passwords**, but you'd need to **match hash digests**.
+
+#### Note
+
+It's possible to cause similar partial construction collisions with a password rather than an API key. However, as passwords are hashed, this means you need to inject a value that makes the hash digest match the uninitialized value.
+## Time-sensitive attacks:
+- Vulnerabilities can appear even without race conditions if timing is crucial.
+    
+- Example:
+    
+    - Reset tokens based on timestamps, not randomness.
+        
+    - Trigger two resets at **exact same timestamp** → same token for both users.
+## How to prevent race condition vulnerabilities:
+To secure your app effectively:
+
+- ✅ Avoid mixing data from different storage layers.
+    
+- ✅ Make sensitive operations **atomic** using transactions (e.g., SQL transactions).
+    
+- ✅ Use **uniqueness constraints** as backup protection.
+    
+- ✅ Don’t rely on session storage to protect database logic.
+    
+- ✅ Keep **session updates consistent** — batch updates are safer than piecemeal.
+    
+- ✅ Consider **stateless architectures** using encrypted client-side tokens (e.g., JWTs).
+    
+- ⚠️ Be cautious — [JWT attacks](https://portswigger.net/web-security/jwt) are a known risk.
