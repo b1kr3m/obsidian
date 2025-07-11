@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08-Portswigger/race-condition.md",
+                "file": "08-Portswigger/Authentication-Vuln.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "race-condition"
+              "title": "Authentication-Vuln"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#websecurity/path0traversal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08-Portswigger/race-condition.md",
+                "file": "08-Portswigger/Authentication-Vuln.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for race-condition"
+              "title": "Backlinks for Authentication-Vuln"
             }
           },
           {
@@ -119,12 +119,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "08-Portswigger/cross-side-scripting-main.md",
+                "file": "08-Portswigger/Authentication-Vuln.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from cross-side-scripting-main"
+              "title": "Outgoing links from Authentication-Vuln"
             }
           },
           {
@@ -148,16 +148,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08-Portswigger/cross-side-scripting-main.md",
+                "file": "08-Portswigger/Authentication-Vuln.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of cross-side-scripting-main"
+              "title": "Outline of Authentication-Vuln"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -179,17 +180,22 @@
   },
   "active": "3a64ff795ad6bdc9",
   "lastOpenFiles": [
+    "08-Portswigger/path-traversal.md",
+    "08-Portswigger/Authentication-Vuln.md",
+    "08-Portswigger/cross-side-scripting-main.md",
+    "08-Portswigger/sql-injection-lab3.md",
+    "08-Portswigger/sql-injection-lab2.md",
+    "08-Portswigger/sql-injection-main.md",
+    "04-Resources/thm-linux-file-system-analysis.md",
+    "05-Archives/htb-meaw.md",
+    "07-Warehouse/Piracy.md",
+    "00-Daily/Obvious-Focus-3181.md",
+    "08-Portswigger/race-condition.md",
     "06-Assets/Pasted image 20250709224010.png",
     "06-Assets/Pasted image 20250709223924.png",
     "06-Assets/Pasted image 20250709223910.png",
     "06-Assets/Pasted image 20250709223843.png",
-    "08-Portswigger/sql-injection-lab2.md",
-    "08-Portswigger/sql-injection-lab3.md",
-    "08-Portswigger/race-condition.md",
     "07-Warehouse/P.A.R.A.md",
-    "08-Portswigger/cross-side-scripting-main.md",
-    "08-Portswigger/sql-injection-main.md",
-    "00-Daily/Obvious-Focus-3181.md",
     "02-Projects/thm-DFIR.md",
     "README.md",
     "Untitled.canvas",

@@ -33,6 +33,3 @@ https://www.reddit.com/r/Piracy/wiki/megathread/software/ Software
 - [MyDigitalLife](https://forums.mydigitallife.net/) Forum
 - [DirtyWarez](https://forum.dirtywarez.com/) Forum
 - [Ru-Board](http://forum.ru-board.com/forum.cgi?forum=35) Forum
-
-## Porn
-https://theporndude.com/
